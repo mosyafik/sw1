@@ -19,34 +19,34 @@ export async function all(m) {
         this.sendButton(m.chat, `${wm}
 
         ╭━━━━「 SEWA 」
-        ┊⫹⫺ Hemat: 5k/grup (1 minggu)
-        ┊⫹⫺ Normal: 15k/grup (1 bulan)
-        ┊⫹⫺ Standar: 30k/grup (2 bulan)
-        ┊⫹⫺ Pro: 35k/grup (4 bulan)                                                      
-        ┊⫹⫺ Vip: = 65k/grup (12 bulan)
+        ┊⫹⫺ Hemat: 10k/grup (1 minggu)
+        ┊⫹⫺ Normal: 28k/grup (1 bulan)
+        ┊⫹⫺ Standar: 45k/grup (2 bulan)
+        ┊⫹⫺ Pro: 70k/grup (4 bulan)                                                      
+        ┊⫹⫺ Vip: = 100k/grup (12 bulan)
         ╰═┅═━––––––๑
         
         ╭━━━━「 PREMIUM 」
-        ┊⫹⫺ Hemat: 5k (1 minggu)
+        ┊⫹⫺ Hemat: 7k (1 minggu)
         ┊⫹⫺ Normal: 20k (1 bulan)
-        ┊⫹⫺ Pro: 40k (4 bulan)
-        ┊⫹⫺ Vip: 50k (8 bulan)                                               
-        ┊⫹⫺ Permanent: = 70k (Unlimited)
+        ┊⫹⫺ Pro: 45k (4 bulan)
+        ┊⫹⫺ Vip: 60k (8 bulan)                                               
+        ┊⫹⫺ Permanent: = 80k (Unlimited)
         ╰═┅═━––––––๑
         
         ⫹⫺ PAYMENT:
-        • Pulsa Telkomsel: [082127487538]
-        • Dana: [082127487538]
-        • Gopay: [082127487538]
-        • Ovo: [082127487538]
-        • Link Aja: [082127487538]
+        • Pulsa Telkomsel: [-]
+        • Dana: [089699005480]
+        • Gopay: [089699005480]
+        • Ovo: [089699005480]
+        • Link Aja: [-]
         
         Nomor Owner :
-        wa.me/6282127487538
+        wa.me/628981574999
         
         ▌│█║▌║▌║║▌║▌║█│▌
         
-        #BY WH MODS DEV
+        #BY Mos
         `.trim(), wm, 'Pemilik Bot', '.owner', m)
 await this.reply(nomorown + '@s.whatsapp.net', `Ada Yang Mau Nyulik nih :v \n\ndari: @${m.sender.split("@")[0]} \n\npesan: ${m.text}`, m, { mentions: [m.sender] })
     }
@@ -98,15 +98,15 @@ await this.reply(nomorown + '@s.whatsapp.net', `Ada Yang Mau Nyulik nih :v \n\nd
     // bot
     if (/^(aktif|w(ey|oi)|bot|ha[iy]|we|oy|p)$/i.test(m.text)) {
     let apsih = ["Kenapa",
-"Ada apa",
+"Avaan coek:v",
 "Naon meng",
 "Iya, bot disini",
 "Luwak white coffe passwordnya",
 "Hmmm, kenapa",
-"Apasih",
+"Paansih🤨",
 "Okey bot sudah aktif",
 "2, 3 tutup botol",
-"Bot aktif"]
+"Bot aktif coy"]
         let caption = `*${apsih.getRandom()}* kak ${name} @${who.split("@")[0]} 🗿`
     this.sendButton(m.chat, caption, wm, null, [[user.banned ? 'Pemilik Bot' : 'Menu', user.banned ? '/owner' : '/menu']], m, { mentions: this.parseMention(caption) })
         }
