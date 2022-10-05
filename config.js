@@ -68,7 +68,7 @@ global.psaweria = 'https://saweria.com/mosyafik'
 
 /*============== NOMOR ==============*/
 global.nomorbot = '6289699005480'
-global.nomorown = '6289815749999'
+global.nomorown = '628981574999'
 global.namebot = 'BotShin V2'
 global.nameown = 'Mos'
 
