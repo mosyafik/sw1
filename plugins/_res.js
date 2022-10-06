@@ -2,7 +2,7 @@ import fetch from 'node-fetch'
 import fs from 'fs'
 
 export async function all(m) {
-  let pp = await this.profilePictureUrl(m.sender, 'image').catch(_ => 'https://telegra.ph/file/24fa902ead26340f3df2c.png')
+  let pp = await this.profilePictureUrl(m.sender, 'image').catch(_ => 'https://telegra.ph/file/f26e181f5c247cc591546.jpg')
   
   let vr = ['1', '2', '3', '4', '5', '6', '7', '8', '9']
   let num = vr.getRandom()
