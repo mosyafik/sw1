@@ -15,7 +15,7 @@ if (m.isBaileys) return
         if (m.mentionedJid.includes(this.user.jid) && m.isGroup) {
             await this.sendMessage(m.chat, { sticker : stc, thumbnail: await( await fetch(pp)).buffer() , contextInfo:{  externalAdReply: { showAdAttribution: true,
 mediaType:  1,
-mediaUrl: 'https://wa.me/6282127487538',
+mediaUrl: 'https://wa.me/628981574999',
 title: '「 ❔ 」',
 body: wm,
 sourceUrl: 'http://github.com/mosyafik', thumbnail: await( await fetch(pp)).buffer()
