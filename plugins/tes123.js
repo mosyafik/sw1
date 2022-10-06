@@ -1,7 +1,7 @@
 import fs from 'fs'
 import fetch from 'node-fetch'
 let handler  = async (m, { conn, usedPrefix: _p }) => {
-let info = `WH MODS BOT Disini (>ω<)`
+let info = `BotShin Disini!! (>ω<)`
 
 let td = 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'
 /*const message = {
@@ -45,7 +45,7 @@ let td = 'application/vnd.openxmlformats-officedocument.wordprocessingml.documen
         return await conn.sendMessage(m.chat, message)*/
 conn.reply(m.chat, info, m, { contextInfo: { externalAdReply: {title: global.wm, body: 'Yaw? ada apa kak?', sourceUrl: snh, thumbnail: fs.readFileSync('./thumbnail.jpg')  }}})
 }
-handler.customPrefix = /^(tes|bot|whmods)$/i
+handler.customPrefix = /^(tes|bot|botshin)$/i
 handler.command = new RegExp
 
 export default handler
