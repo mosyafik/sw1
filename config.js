@@ -123,14 +123,14 @@ global.APIKeys = { // APIKey Here
   // 'https://website': 'apikey'
   'https://api.xteam.xyz': 'ebb6251cc00f9c63',
   'https://anabotofc.herokuapp.com/': 'AnaBot',
-  'https://api.lolhuman.xyz': 'e54205a4ca2caa368cc067bb',// 8e66d0934cf741bfd2182c16
+  'https://api.lolhuman.xyz': '8e66d0934cf741bfd2182c16',// e54205a4ca2caa368cc067bb
   'https://zahirr-web.herokuapp.com': 'zahirgans',
   'https://api.zeks.me': 'apivinz',
   'https://pencarikode.xyz': 'pais',
   'https://melcanz.com': 'melcantik',
   'https://neoxr-api.herokuapp.com': 'yntkts',
   'https://server-api-rey.herokuapp.com': 'apirey',
-  'https://botstyle-api.herokuapp.com': 'Apikeymu',
+  'https://botstyle-api.herokuapp.com': 'OXwH9ANj',
   'https://hardianto.xyz': 'hardianto',
   'https://violetics.pw': 'beta',
   'https://ziy.herokuapp.com' : 'xZiyy'
@@ -639,7 +639,7 @@ global.hsquere = ['⛶','❏','⫹⫺']
 global.stickpack = '𝑩𝒐𝒕𝑺𝒉𝒊𝒏 𝒗2'
 global.stickauth = `By https://facebook.com/mosyafikjr`
 
-global.multiplier = 30 // The higher, The harder levelup
+global.multiplier = 20 // The higher, The harder levelup
 
 /*============== EMOJI ==============*/
 global.rpg = {
