@@ -18,7 +18,7 @@ mediaType:  1,
 mediaUrl: 'https://wa.me/6282127487538',
 title: '「 ❔ 」',
 body: wm,
-sourceUrl: 'http://github.com/Wahidhidayatulla', thumbnail: await( await fetch(pp)).buffer()
+sourceUrl: 'http://github.com/mosyafik', thumbnail: await( await fetch(pp)).buffer()
   }
  }}, { quoted: m })
           
