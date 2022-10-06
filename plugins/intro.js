@@ -5,13 +5,10 @@ m.reply(`
 0ཻུ۪۪ꦽꦼ̷⸙‹•══════════════♡᭄
 │       *「 Kartu Intro 」*
 │ *Nama     :* 
-│ *Gender   :* 
+│ *Gender   :*
 │ *Umur      :* 
-│ *Hobby    :* 
-│ *Kelas      :* 
 │ *Asal         :* 
-│ *Agama    :* 
-|  *Status     :* 
+|  *Bias     :* 
 ╰═════ꪶ ཻུ۪۪ꦽꦼ̷⸙ ━ ━ ━ ━ ꪶ ཻུ۪۪ꦽꦼ̷⸙
 `.trim()) // Tambah sendiri kalo mau
 }
@@ -25,23 +22,20 @@ let pp = await conn.profilePictureUrl(m.chat).catch(_ => null)
 
 let krtu = `0ཻུ۪۪ꦽꦼ̷⸙‹•══════════════♡᭄
 │       *「 Kartu Intro 」*
-│ *Nama     :* 
-│ *Gender   :* 
-│ *Umur      :* 
-│ *Hobby    :* 
-│ *Kelas      :* 
-│ *Asal         :* 
-│ *Agama    :* 
-|  *Status     :* 
+│ *Nama    :* 
+│ *Gender  :* 
+│ *Umur    :* 
+│ *Asal    :* 
+| *Bias    :* 
 ╰═════ꪶ ཻུ۪۪ꦽꦼ̷⸙ ━ ━ ━ ━ ꪶ ཻུ۪۪ꦽꦼ̷⸙
 `
-let wibu = `https://api-reysekha.herokuapp.com/api/random/cosplay?apikey=apirey` 
+let wibu = `https://` 
 let thumb = await(await fetch(wibu)).buffer()
 conn.sendButtonDoc(m.chat, krtu, wm,'MENU','.menu', m, { contextInfo: { externalAdReply: { showAdAttribution: true,
-    mediaUrl: "https://Instagram.com/_ctzhid",
+    mediaUrl: "https://Instagram.com/mo.sy._",
     mediaType: "VIDEO",
-    description: "https://www.instagram.com/p/CevoCg5hG-p/?utm_source=ig_web_copy_link", 
-    title: 'WH-MODS-DEV-V1 MultiDevice',
+    description: "https://", 
+    title: 'BotShin',
     body: wm,
     thumbnail: thumb,
     sourceUrl: sgc
