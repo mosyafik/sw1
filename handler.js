@@ -939,7 +939,7 @@ export async function handler(chatUpdate) {
                 if (!('restartDB' in settings)) settings.restartDB = 0
             } else global.db.data.settings[this.user.jid] = {
                 self: false,
-                autoread: false,
+                autoread: true,
                 jadibot: false,
                 autorestart: false,
                 anticall: true,
