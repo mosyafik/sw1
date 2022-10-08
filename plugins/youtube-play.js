@@ -73,7 +73,8 @@ if (!text) throw 'Input Query'
 }
 handler.help = ['play', 'play'].map(v => v + ' <pencarian>')
 handler.tags = ['downloader']
-handler.command = /^(y((outube|((utu|t)b|t))play|tp)|play(yt)?)$/i
+handler.command = /^(y((outube|((utu|t)b|t))play|tp|p)|play(yt)?)$/i
+
 
 handler.exp = 0
 handler.limit = false
