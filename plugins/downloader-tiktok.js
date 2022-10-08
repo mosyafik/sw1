@@ -25,7 +25,7 @@ if (!args[0]) throw `Use example ${usedPrefix}${command} https://www.tiktok.com/
 ────────── ⇆ㅤ◁ㅤ ❚❚ㅤ ▷ㅤ↻ ──────────
 *Nickname:* ${nickname}
 *Description:* ${description}
-_©WH-MODS-BOT-V1🍭_
+_*BotShin v2*🍭_
 `.trim(), m)
 }
 catch {
@@ -65,7 +65,7 @@ let p = await tiktok(args[0])
 *Description:* ${p.description}
 *Url:* ${p.url}
 
-_©WH-MODS-BOT-V1🍭_
+_*BotShin v2*🍭_
 `.trim()
 conn.send2ButtonVid(m.chat, p.link, cap, author, `Donasi`, `.donasi`, `Audio`, `.tta ${args[0]}`, fakes, adReply)
 } catch (e) {
@@ -75,6 +75,6 @@ conn.send2ButtonVid(m.chat, p.link, cap, author, `Donasi`, `.donasi`, `Audio`, `
 
 handler.help = ['tiktok', 'tiktok', 'tiktokdl'].map(v => v + ' <url>')
 handler.tags = ['downloader']
-handler.command = /^(tik(tok)?(tok)?(dl)?)$/i
+handler.command = /^t(ik(tok)?(tok)?(dl)?)$/i
 
 export default handler
