@@ -16,7 +16,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
                  ███▄▄▄▄▄███████
 ────────── ⇆ㅤ◁ㅤ ❚❚ㅤ ▷ㅤ↻ ────────── \n
 *Judul:* ${res.title}\n
-${res.author ? `*Pembuat Video:* ${res.author}` : '\n' }`.trim(), 'Cara Save di galery:\n1. Download dulu videonya\n2. Buka terus klik titik 3 pojok kanan atas\n3. lalu klik simpan!\n\n *BotShin v2*', 'menu', usedPrefix + 'menu', m)
+${res.author ? `*Pembuat Video:* ${res.author}` : '\n' }`.trim(), 'Cara Save di galery:\n1. Download dulu videonya\n2. Buka terus klik titik 3 pojok kanan atas\n3. lalu klik simpan!\n\n *BotShin v2*', '*Menu*', usedPrefix + 'menu', m)
 }
 handler.help = ['tiktok'].map(v => v + ' <url>')
 handler.tags = ['downloader']
