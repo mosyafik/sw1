@@ -347,12 +347,6 @@ let tek = `✧────···[ Dashboard ]···────✧
 │${emot} *ᴜsᴇʀs:* ${Object.keys(global.db.data.users).length}
 │${emot} *ʟɪᴍɪᴛ:* ${usrs.limit}
 │${emot} *ʟᴇᴠᴇʟ:* ${usrs.level}
-│
-├━━━━━━━━━━━━━━━━┈─⋆
-│  「 *I n f o   B o t 比* 」
-│${emot} Aktif selama ${mpt}
-│${emot} Baterai ${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 pengisian' : ''}` : 'tidak diketahui'}
-│${emot} Prefix : [ ${_p} ]
 │${emot} *${Object.keys(global.db.data.users).length}* Pengguna
 │${emot} *${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}* Chat Terbanned
 │${emot} *${Object.entries(global.db.data.users).filter(user => user[1].banned).length}* Pengguna Terbanned
@@ -695,9 +689,9 @@ const listMessage = {
     throw e
   }
 }
-handler.help = ['menu', 'help', '?']
+handler.help = ['menu', 'help', '?', 'm']
 handler.tags = ['main']
-handler.command = /^(menu|help|\?)$/i
+handler.command = /^(menu|help|m|\?)$/i
 
 handler.register = false
 handler.exp = 3
