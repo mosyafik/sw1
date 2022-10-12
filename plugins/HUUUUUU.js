@@ -10,10 +10,7 @@ let stiker = await sticker(null, global.API(`${pickRandom(stikerhuuu)}`), global
     if (stiker) return await conn.sendFile(m.chat, stiker, 'sticker.webp', '', m, null, { fileLength: fsizedoc, contextInfo: {
           externalAdReply :{
           showAdAttribution: true,
-    mediaUrl: sig,
-    mediaType: 2,
-    description: wm, 
-    title: '👋 Hai, ' + name + ' ' + ucapan,
+    
     body: botdate,
     thumbnail: await(await fetch(pp)).buffer(),
     sourceUrl: sgc
