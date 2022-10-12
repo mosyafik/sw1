@@ -12,9 +12,7 @@ let stiker = await sticker(null, global.API(`${pickRandom(stikerhuuu)}`), global
           showAdAttribution: true,
     
     body: botdate,
-    thumbnail: await(await fetch(pp)).buffer(),
-    sourceUrl: sgc
-     }}
+    
   })
     throw stiker.toString()
     
