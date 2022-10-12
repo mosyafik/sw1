@@ -13,6 +13,8 @@ let stiker = await sticker(null, global.API(`${pickRandom(stikerhuuu)}`), global
     
     body: botdate,
     
+    
+     }}
   })
     throw stiker.toString()
     
