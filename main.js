@@ -170,14 +170,14 @@ global.reloadHandler = async function (restatConn) {
 
   conn.welcome = '👋 Hallo @user\n\n                *W E L C O M E*\n⫹⫺ In @subject\n\n⫹⫺ Read *DESCRIPTION*\n@desc'
   conn.bye = '👋 Byee @user\n\n                *G O O D B Y E*'
-  conn.spromote = '*@user* Sekarang jadi admin!'
-  conn.sdemote = '*@user* Sekarang bukan lagi admin!'
+  conn.spromote = '*@user* Sekarang naik jadi admin! 😘' 
+  conn.sdemote = '*@user* Sekarang turun jabatan! 🗿'
   conn.sDesc = 'Deskripsi telah diubah menjadi \n@desc'
   conn.sSubject = 'Judul grup telah diubah menjadi \n@subject'
   conn.sIcon = 'Icon grup telah diubah!'
   conn.sRevoke = 'Link group telah diubah ke \n@revoke'
-  conn.sAnnounceOn = 'Group telah di tutup!\nsekarang hanya admin yang dapat mengirim pesan.'
-  conn.sAnnounceOff = 'Group telah di buka!\nsekarang semua peserta dapat mengirim pesan.'
+  conn.sAnnounceOn = 'Group telah di tutup!\nsekarang hanya admin yang dapat mengirim pesan 😋'
+  conn.sAnnounceOff = 'Group telah di buka!\nsekarang semua peserta dapat mengirim pesan 🤝'
   conn.sRestrictOn = 'Edit Info Grup di ubah ke hanya admin!'
   conn.sRestrictOff = 'Edit Info Grup di ubah ke semua peserta!'
   
