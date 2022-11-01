@@ -900,7 +900,7 @@ export async function handler(chatUpdate) {
                     if (!isNumber(chat.expired)) chat.expired = 0
                 } else
                     global.db.data.chats[m.chat] = {
-                        antiDelete: false,
+                        antidelete: false,
                         antiLink: false,
                         antiSticker: false,
                         antiToxic: false,
@@ -1298,7 +1298,7 @@ export async function participantsUpdate({ id, participants, action }) {
                                 membercount: groupMetadata.participants.length
                             })
                             
- /* conn.sendButtonDoc(id, wm, text, action == 'add' ? 'ᴡᴇʟᴄᴏᴍᴇ' : 'sᴀʏᴏɴᴀʀᴀᴀ', action === 'add' ? '.intro' : 'Aʟᴅɪ X Aɪsʏᴀʜ', fkontak, { contextInfo: { externalAdReply: { showAdAttribution: true,
+ /* conn.sendButtonDoc(id, wm, text, action == 'add' ? 'ᴡᴇʟᴄᴏᴍᴇ' : 'sᴀʏᴏɴᴀʀᴀᴀ', action === 'add' ? '.intro' : '-', fkontak, { contextInfo: { externalAdReply: { showAdAttribution: true,
     mediaUrl: 'https://instagram/mo.sy._',
     mediaType: 2, 
     description: sgc,
@@ -1315,7 +1315,7 @@ export async function participantsUpdate({ id, participants, action }) {
     mediaUrl: 'https://www.instagram.com/mo.sy._/',
     mediaType: 2, 
     description: sgc,
-    title: "Jᴏɪɴ Sɪɴɪ Cᴜʏ",
+    title: "-",
     body: wm,
     thumbnail: await(await fetch(action === 'add' ? welcom : godbye)).buffer(),
     sourceUrl: sig
@@ -1327,10 +1327,10 @@ export async function participantsUpdate({ id, participants, action }) {
             }
             break
         case 'promote':
-            text = (chat.sPromote || this.spromote || conn.spromote || '@user ```is now Admin```')
+            text = (chat.sPromote || this.spromote || conn.spromote || '@user ```Sekarang Menjadi Admin✅```')
         case 'demote':
             if (!text)
-                text = (chat.sDemote || this.sdemote || conn.sdemote || '@user ```is no longer Admin```')
+                text = (chat.sDemote || this.sdemote || conn.sdemote || '@user ```Tidak Menjabat Admin🗿```')
             text = text.replace('@user', '@' + participants[0].split('@')[0])
             if (chat.detect)
                 this.sendMessage(id, { text, mentions: this.parseMention(text) })
