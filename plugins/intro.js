@@ -5,10 +5,13 @@ m.reply(`
 0ཻུ۪۪ꦽꦼ̷⸙‹•══════════════♡᭄
 │       *「 Kartu Intro 」*
 │ *Nama     :* 
-│ *Gender   :*
+│ *Gender   :* 
 │ *Umur      :* 
+│ *Hobby    :* 
+│ *Kelas      :* 
 │ *Asal         :* 
-|  *Bias     :* 
+│ *Agama    :* 
+|  *Status     :* 
 ╰═════ꪶ ཻུ۪۪ꦽꦼ̷⸙ ━ ━ ━ ━ ꪶ ཻུ۪۪ꦽꦼ̷⸙
 `.trim()) // Tambah sendiri kalo mau
 }
@@ -22,14 +25,16 @@ let pp = await conn.profilePictureUrl(m.chat).catch(_ => null)
 
 let krtu = `0ཻུ۪۪ꦽꦼ̷⸙‹•══════════════♡᭄
 │       *「 Kartu Intro 」*
-│ *Nama    :* 
-│ *Gender  :* 
-│ *Umur    :* 
-│ *Asal    :* 
-| *Bias    :* 
+│ *Nama     :* 
+│ *Gender   :* 
+│ *Umur      :* 
+│ *Hobby    :* 
+│ *Asal         :* 
+│ *Agama    :* 
+|  *Bias.     :*
 ╰═════ꪶ ཻུ۪۪ꦽꦼ̷⸙ ━ ━ ━ ━ ꪶ ཻུ۪۪ꦽꦼ̷⸙
 `
-let wibu = `https://` 
+let wibu = `-` 
 let thumb = await(await fetch(wibu)).buffer()
 conn.sendButtonDoc(m.chat, krtu, wm,'MENU','.menu', m, { contextInfo: { externalAdReply: { showAdAttribution: true,
     mediaUrl: "https://Instagram.com/mo.sy._",
