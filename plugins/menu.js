@@ -22,27 +22,6 @@ ${emot}│☂︎ *Level:* %level [ %xp4levelup Xp For Levelup]
 ${emot}│☂︎ *Xp:* %exp / %maxexp
 ┬│☂︎ *Total Xp:* %totalexp
 │╰────────────────···
-┠─────═[ TODAY ]═─────⋆
-│╭────────────────···
-┴│    *${ucapan()} %name!*
-${emot}│☂︎ *Tanggal:* %week %weton
-${emot}│☂︎ *Date:* %date
-${emot}│☂︎ *Tanggal Islam:* %dateIslamic
-┬│☂︎ *Waktu:* %time
-│╰────────────────···
-┠─────═[ INFO BOT ]═─────⋆
-│╭────────────────···
-┴│☂︎ *Nama Bot:* %me
-${emot}│☂︎ *Mode:* %mode
-${emot}│☂︎ *Prefix:* [ *%_p* ]
-${emot}│☂︎ *Baileys:* Multi Device
-${emot}│☂︎ *Battery:* ${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 pengisian' : ''}` : 'tidak diketahui'}
-${emot}│☂︎ *Platform:* %platform
-${emot}│☂︎ *Type:* Node.Js
-${emot}│☂︎ *Uptime:* %muptime
-┬│☂︎ *Database:* %rtotalreg dari %totalreg
-│╰────────────────···
-╰──────────═┅═──────────
 
 ⃝▣──「 *INFO CMD* 」───⬣
 │ *Ⓟ* = Premium
@@ -342,20 +321,6 @@ let tek = `✧────···[ Dashboard ]···────✧
 │${emot} *ᴘʀᴇᴍɪᴜᴍ:* ${usrs.premiumTime > 1 ? 'Yes': 'No'}
 │
 ├━━━━━━━━━━━━━━━━┈─⋆
-│  「 *S t a t u s  I n f o 比* 」
-│${emot} *ᴛɪᴍᴇ:* ${moment.tz('Asia/Jakarta').format('HH')} H  ${moment.tz('Asia/Jakarta').format('mm')} M  ${moment.tz('Asia/Jakarta').format('ss')} S
-│${emot} *ᴜsᴇʀs:* ${Object.keys(global.db.data.users).length}
-│${emot} *ʟɪᴍɪᴛ:* ${usrs.limit}
-│${emot} *ʟᴇᴠᴇʟ:* ${usrs.level}
-│${emot} *${Object.keys(global.db.data.users).length}* Pengguna
-│${emot} *${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}* Chat Terbanned
-│${emot} *${Object.entries(global.db.data.users).filter(user => user[1].banned).length}* Pengguna Terbanned
-│
-├━━━━━━━━━━━━━━━━┈─⋆
-│
-│ ▸ *Script :* WH-MODS-DEV
-│ ▸ *ᴀᴜᴛʜᴏʀ :* ${nameown}
-┴ ▸ *ᴏᴡɴᴇʀ :* ${nameown}
 ✧
 ┬ 📌 𝗣𝗶𝗻𝗻𝗲𝗱 :
 │ ʙᴇʀɪ ᴊᴇᴅᴀ ʏᴀʜ ᴋᴀᴋ ^ω^
@@ -370,7 +335,7 @@ const listMessage = {
   footer: `📮 *Note:* Jika menemukan bug, error atau kesulitan dalam penggunaan silahkan laporkan/tanyakan kepada Owner\n\nᴍᴀᴅᴇ ᴡɪᴛʜ ❤ ʙʏ ${nameown}\n\n${botdate}\n\n${wm2}`,
   mentions: await conn.parseMention(tek),
   title: ``,
-  buttonText: `MAIN MENU`, 
+  buttonText: `MENU`, 
   sections
 }
   if (teks == '404') {
@@ -624,7 +589,7 @@ const listMessage = {
                 {
                     urlButton: {
                         displayText: `${namebot}`,
-                        url: 'https://github.com/WH-MODS-BOT/'
+                        url: 'https://github.com/'
                     }
                 },
                 {
@@ -635,19 +600,19 @@ const listMessage = {
                 },
                 {
                     quickReplyButton: {
-                        displayText: 'Owner🎐',
+                        displayText: 'Owner',
                         id: '.owner'
                     }
                 },
                 {
                     quickReplyButton: {
-                        displayText: 'Speed⚡',
+                        displayText: 'Speed',
                         id: '.ping'
                     }
                 },
                 {
                     quickReplyButton: {
-                        displayText: 'Donasi💵',
+                        displayText: 'Donasi',
                         id: '.donasi'
                     }
                 },
@@ -726,16 +691,16 @@ function ucapan() {
   const time = moment.tz('Asia/Jakarta').format('HH')
   let res = "Kok Belum Tidur Kak? 🥱"
   if (time >= 4) {
-    res = "Pagi Lord 🌄"
+    res = "Pagi 🌄"
   }
   if (time >= 10) {
-    res = "Siang Lord ☀️"
+    res = "Siang ☀️"
   }
   if (time >= 15) {
-    res = "Sore Lord 🌇"
+    res = "Sore 🌇"
   }
   if (time >= 18) {
-    res = "Malam Lord 🌙"
+    res = "Malam 🌙"
   }
   return res
 }
